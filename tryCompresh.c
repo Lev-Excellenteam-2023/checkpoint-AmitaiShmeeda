@@ -104,10 +104,12 @@ int main() {
             current = current->next;
         }
         printf("\n");
+
+        // Free the allocated memory for the linked list of each level
+        freeLinkedList(levels[i]);
     }
 
-    // Free the allocated memory for the linked list of each level
-    freeLinkedList(levels[i]);
+    
 
     return 0;
 }
