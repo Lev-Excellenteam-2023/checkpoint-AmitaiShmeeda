@@ -1,0 +1,26 @@
+# Ignore compiled binary files
+*.exe
+*.out
+*.vs
+
+# Ignore object files and build artifacts
+*.o
+*.obj
+*.dSYM/
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore editor-specific files
+.vscode/
+.idea/
+
+# Ignore generated documentation
+doc/
+
+# Ignore any files with sensitive information (e.g., API keys, passwords)
+config.ini
+
+# Ignore the students.txt file since it contains data that can be managed separately
+students.txt
