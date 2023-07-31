@@ -52,6 +52,15 @@ void insertAtEnd(Node** head, Student data) {
     }
 }
 
+// Function to free the allocated memory of the linked list
+void freeLinkedList(Node* head) {
+    while (head != NULL) {
+        Node* temp = head;
+        head = head->next;
+        free(temp);
+    }
+}
+
 int main() {
     FILE* file = fopen("students.txt", "r");
     if (file == NULL) {
@@ -97,7 +106,8 @@ int main() {
         printf("\n");
     }
 
-    // TODO: Free the linked list nodes to release memory (not shown here for simplicity)
+    // Free the allocated memory for the linked list of each level
+    freeLinkedList(levels[i]);
 
     return 0;
 }
