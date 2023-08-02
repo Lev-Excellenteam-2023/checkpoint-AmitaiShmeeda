@@ -4,7 +4,7 @@
 *.vs
 
 # Ignore object files and build artifacts
-*.o
+
 *.obj
 *.dSYM/
 
